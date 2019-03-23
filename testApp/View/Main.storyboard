@@ -262,6 +262,34 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="179" id="FZb-aL-Or7">
+                                        <rect key="frame" x="0.0" y="292" width="375" height="179"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FZb-aL-Or7" id="QgJ-Co-N2h">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="178.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EG0-GJ-Txq">
+                                                    <rect key="frame" x="142" y="12" width="91.5" height="47"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv5-DC-FYl">
+                                                    <rect key="frame" x="166.5" y="71" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EG0-GJ-Txq" firstAttribute="centerX" secondItem="QgJ-Co-N2h" secondAttribute="centerX" id="4Bn-tX-VNG"/>
+                                                <constraint firstItem="Bv5-DC-FYl" firstAttribute="centerX" secondItem="EG0-GJ-Txq" secondAttribute="centerX" id="RhR-HI-Ivd"/>
+                                                <constraint firstItem="Bv5-DC-FYl" firstAttribute="top" secondItem="EG0-GJ-Txq" secondAttribute="bottom" constant="12" id="cOy-af-zQd"/>
+                                                <constraint firstItem="EG0-GJ-Txq" firstAttribute="top" secondItem="QgJ-Co-N2h" secondAttribute="top" constant="12" id="wzd-X5-FUI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -271,6 +299,8 @@
                         <outlet property="cmcLabel" destination="90Y-J8-MlP" id="2GA-zl-LiA"/>
                         <outlet property="nameLabel" destination="p03-cY-NvN" id="6HT-FG-G9h"/>
                         <outlet property="numlabel" destination="6Nv-J7-wuH" id="fgR-vN-MPT"/>
+                        <outlet property="percentLabel" destination="Bv5-DC-FYl" id="zRX-JL-STy"/>
+                        <outlet property="price" destination="EG0-GJ-Txq" id="BMK-F1-Obx"/>
                         <outlet property="slugLabel" destination="Q3Q-oh-VwO" id="L49-Tf-vAh"/>
                         <outlet property="supplyLabel" destination="mDm-5z-Ed7" id="vZd-d5-TnV"/>
                         <outlet property="symbolLabel" destination="H7Z-S9-Ah4" id="0mU-w4-5fK"/>

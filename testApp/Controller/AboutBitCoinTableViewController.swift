@@ -17,6 +17,8 @@ class AboutBitCoinTableViewController: UITableViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var numlabel: UILabel!
     @IBOutlet weak var cmcLabel: UILabel!
+    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var percentLabel: UILabel!
     
     var bitCoin: BitCoin?
     
@@ -36,7 +38,19 @@ class AboutBitCoinTableViewController: UITableViewController {
             self.totalLabel.text = String(bitcoin.total_supply)
             self.numlabel.text = String(bitcoin.num_market_pairs)
             self.cmcLabel.text = String(bitcoin.cmc_rank)
-            
+            if let quote = bitcoin.quote, let USD = quote.USD {
+                let price = String(USD.price)
+                let price1 = String(price.characters.prefix(10))
+                self.price.text = "$\(price1)"
+                self.percentLabel.text = String("\(USD.percent_change_24h)%")
+                if USD.percent_change_24h < 0 {
+                    self.price.textColor = UIColor.red
+                    self.percentLabel.textColor = UIColor.red
+                } else {
+                    self.price.textColor = UIColor.green
+                    self.percentLabel.textColor = UIColor.green
+                }
+            }
         }
     }
 }

@@ -22,6 +22,8 @@
 		D22E1A442244F968006DA4CE /* BitCoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E1A432244F968006DA4CE /* BitCoinViewModel.swift */; };
 		D22E1A4822450FAE006DA4CE /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E1A4722450FAE006DA4CE /* RealmManager.swift */; };
 		D22E1A4A224552C8006DA4CE /* SavedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E1A49224552C8006DA4CE /* SavedTableViewController.swift */; };
+		D2A154D122460C050046A185 /* CoinPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A154D022460C050046A185 /* CoinPrice.swift */; };
+		D2A154D3224611D40046A185 /* CoinUSD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A154D2224611D40046A185 /* CoinUSD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		D22E1A432244F968006DA4CE /* BitCoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinViewModel.swift; sourceTree = "<group>"; };
 		D22E1A4722450FAE006DA4CE /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		D22E1A49224552C8006DA4CE /* SavedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableViewController.swift; sourceTree = "<group>"; };
+		D2A154D022460C050046A185 /* CoinPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPrice.swift; sourceTree = "<group>"; };
+		D2A154D2224611D40046A185 /* CoinUSD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinUSD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				D22E1A412244F2BE006DA4CE /* BitCoin.swift */,
+				D2A154D022460C050046A185 /* CoinPrice.swift */,
+				D2A154D2224611D40046A185 /* CoinUSD.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,12 +300,14 @@
 			files = (
 				D22E1A422244F2BE006DA4CE /* BitCoin.swift in Sources */,
 				D22E1A372244E89B006DA4CE /* BitCoinTableViewCell.swift in Sources */,
+				D2A154D122460C050046A185 /* CoinPrice.swift in Sources */,
 				D22E1A2F2244E5E6006DA4CE /* BitCoinTableViewController.swift in Sources */,
 				D22E1A4A224552C8006DA4CE /* SavedTableViewController.swift in Sources */,
 				D22E1A442244F968006DA4CE /* BitCoinViewModel.swift in Sources */,
 				D22E1A3E2244EF81006DA4CE /* AboutBitCoinTableViewController.swift in Sources */,
 				D22E1A4822450FAE006DA4CE /* RealmManager.swift in Sources */,
 				D22E1A3A2244ECEC006DA4CE /* Constant.swift in Sources */,
+				D2A154D3224611D40046A185 /* CoinUSD.swift in Sources */,
 				D22E1A182244E324006DA4CE /* AppDelegate.swift in Sources */,
 				D22E1A312244E743006DA4CE /* ServiceManager.swift in Sources */,
 			);

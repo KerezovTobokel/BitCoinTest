@@ -38,11 +38,19 @@
                             <action selector="saveBitCoin:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Grr-jE-cvh"/>
                         </connections>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fL-Gb-CwB">
+                        <rect key="frame" x="211" y="14.5" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="khR-sJ-HYP" secondAttribute="bottom" constant="8" id="1mH-jq-iDr"/>
                     <constraint firstItem="khR-sJ-HYP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="5CC-fY-tI9"/>
+                    <constraint firstItem="khR-sJ-HYP" firstAttribute="leading" secondItem="6fL-Gb-CwB" secondAttribute="trailing" constant="20" id="CQU-7R-IIM"/>
                     <constraint firstAttribute="trailing" secondItem="khR-sJ-HYP" secondAttribute="trailing" constant="8" id="N23-W9-764"/>
+                    <constraint firstItem="6fL-Gb-CwB" firstAttribute="centerY" secondItem="7fg-rk-zrk" secondAttribute="centerY" id="X4T-eN-xxu"/>
                     <constraint firstItem="7fg-rk-zrk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="fPx-Dw-lq9"/>
                     <constraint firstItem="7fg-rk-zrk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="oNt-Yg-KXu"/>
                     <constraint firstAttribute="bottom" secondItem="7fg-rk-zrk" secondAttribute="bottom" constant="8" id="rpH-tR-MkE"/>
@@ -51,6 +59,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="nameLabel" destination="7fg-rk-zrk" id="ugh-6Q-xvN"/>
+                <outlet property="priceLabel" destination="6fL-Gb-CwB" id="kr4-NV-RJr"/>
                 <outlet property="saveButton" destination="khR-sJ-HYP" id="CFx-3Y-8eD"/>
             </connections>
         </tableViewCell>

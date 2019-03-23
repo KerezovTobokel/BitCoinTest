@@ -21,7 +21,7 @@ class BitCoin: Object, Mappable {
     @objc dynamic var total_supply: Int = 0
     @objc dynamic var num_market_pairs: Int = 0
     @objc dynamic var cmc_rank: Int = 0
-    
+    @objc dynamic var quote: CoinPrice?
     
     
     override static func primaryKey() -> String? {
@@ -37,12 +37,10 @@ class BitCoin: Object, Mappable {
         name <- map["name"]
         symbol <- map["symbol"]
         slug <- map["slug"]
-        circulating_supply <- map["symbol"]
-        total_supply <- map["symbol"]
+        circulating_supply <- map["circulating_supply"]
+        total_supply <- map["total_supply"]
         num_market_pairs <- map["num_market_pairs"]
         cmc_rank <- map["cmc_rank"]
-        
-        
+        quote <- map["quote"]
     }
-    
 }
